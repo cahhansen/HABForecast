@@ -1,0 +1,10 @@
+Package: HABForecast
+Type: Package
+Title: Create a forecast for algal blooms
+Version: 0.1.0
+Author: Carly Hansen
+Maintainer: <carly.hansen@utah.edu>
+Description: This package uses statistical relationships to develop forecasts of algal bloom dynamics
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
