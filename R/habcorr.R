@@ -1,4 +1,4 @@
-##' Evaluate strength of correlation between HAB measure and other factor
+#' Evaluate strength of correlation between HAB measure and other factor
 #'
 #' @param hab.data A data frame with columns "Date" (must be of class Date) and a measure of HAB (proxy measure of HAB, for example: cell count, chl-a concentration, phycocyanin concentration, etc.)
 #' @param hab.name Name of the column for the measure of HAB
