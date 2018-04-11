@@ -1,15 +1,28 @@
 library(lubridate)
 library(plyr)
-load('data/chldata.Rda')
-#Mean monthly chl for overall lake
-monthlysummary <- function(data,lake){
-  datasub=subset(data,Lake==lake)
+load('data/rschlstationdata.Rda')
+load('data/rschllakedata.Rda')
+load('data/climatedata.Rda')
+load('data/lakeelevationdata.Rda')
+load('data/streamflow.Rda')
+load('data/gslwwtpdata.Rda')
+
+
+
+#Calculate monthly summary values
+monthlysummary <- function(data,subcol,subval,sumfun,paramcol){
+  data$param <- data[,paramcol]
+  data$Subset <- data[,subcol]
+  datasub=subset(data,Subset==subval)
   datasub$Month=months(datasub$Date)
   datasub$Year=year(datasub$Date)
-  monthly=ddply(datasub, c("Year", "Month"), summarise,
-        Mean=mean(Value),
-        Max=max(Value),
-        StDev=sd(Value))
+  if(sumfun=="mean"){
+    monthly=ddply(datasub, c("Year", "Month"), summarise,
+                  Value=mean(param))
+  }else if(sumfun=="sum"){
+    monthly=ddply(datasub, c("Year", "Month"), summarise,
+                  Value=sum(param))
+  }
   return(monthly)
 }
 
@@ -17,4 +30,9 @@ GSL.monthly <- monthlysummary(chldata,"GSL")
 Utah.monthly <- monthlysummary(chldata,"Utah")
 Farmington.monthly <- monthlysummary(chldata,"Farmington")
 
-#Mean monthly chl for specific locations (single or small group of stations)
+#Utah Lake
+utahlakeavgchl <- monthlysummary(lakestats,"Lake","Utah Lake","mean","Chl_mean")
+utahlakeelevation <- monthlysummary(lakeelevationdata,"Lake","Utah Lake","mean","Elevation_ft")
+
+
+
