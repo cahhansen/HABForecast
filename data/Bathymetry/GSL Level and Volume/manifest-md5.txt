@@ -1,0 +1,16 @@
+20a8f027dfe77a639cf6ac1dd6951e1d    data/resourcemap.xml
+b87d0b2e4427bccd9dffff5c3ae5e423    data/resourcemetadata.xml
+5079547e0582ed8871d823a18bdc30e8    data/contents/GSLFunctions.R
+0b4aa5db878aedbb3262e97f4d3c5a2f    data/contents/GSLLAV.txt
+15c64baa1c19298b0af41b29708b672d    data/contents/GSLLevelRecord.pptx
+cb4c430a90aca840843987b53c85932e    data/contents/GSLLevelVol.csv
+2c0030e67338444b0ae6710d54e0a76a    data/contents/GSL_north_arm_2017-04-23.txt
+2c0030e67338444b0ae6710d54e0a76a    data/contents/GSL_north_arm.txt
+c069aba317dbb66d97e345dd8c1517f7    data/contents/GSL_south_arm_2016-03-01.txt
+ece0a6ccd9da2ce8578c6030f40e2117    data/contents/GSL_south_arm_2017-04-23.txt
+ece0a6ccd9da2ce8578c6030f40e2117    data/contents/GSL_south_arm.txt
+2bdf903c4a32d0c51c6bbe5391531644    data/contents/LevelVolWork.R
+a919b4fb193a55c0d5682c3dda4a6614    data/contents/Readme.txt
+f7e2b9f2d93dad5d1ddafd59a42d709d    data/contents/Bathymetry/BathymetryNotes.docx
+df0bb2a12f2fc9caaddb99c34c32575c    data/contents/Bathymetry/GSLM_Bathymetry_noProposedPonds.csv
+3d849d8071d76204b341aeae7b20d795    data/contents/Bathymetry/GSLM_Volume_Calcs_20110915_noProposedPonds.xlsx

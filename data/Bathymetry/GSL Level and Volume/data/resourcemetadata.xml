@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<!DOCTYPE rdf:RDF PUBLIC "-//DUBLIN CORE//DCMES DTD 2002/07/31//EN"
+"http://dublincore.org/documents/2002/07/31/dcmes-xml/dcmes-xml-dtd.dtd">
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:hsterms="http://hydroshare.org/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs1="http://www.w3.org/2001/01/rdf-schema#">
+  <rdf:Description rdf:about="http://www.hydroshare.org/resource/b26090299ec947c692d4ee4651815579">
+    <dc:title>Great Salt Lake Level and Volume</dc:title>
+    <dc:type rdf:resource="http://www.hydroshare.org/terms/GenericResource"/>
+    <dc:description>
+      <rdf:Description>
+        <dcterms:abstract>Time series of level, area and volume in the Great Salt Lake. Volume and area of the Great Salt Lake are derived from recorded levels and bathymetry.  The bathymetry used is included.  Bathymetry is adjusted for the presence or absence of Magnesium corps pond.  The area of the evaporation pond is not regarded as part of the lake except prior to its construction and during the time it was overtopped. &#13;
+&#13;
+GSL_north_arm.txt is measured data from the USGS station 10010100 GREAT SALT LAKE NEAR SALINE, UT &#13;
+GSL_north_arm_2017-04-23.txt  Duplicate of above as run on 4/23/17&#13;
+&#13;
+GSL_south_arm.txt is measured data from the USGS station 10010000 GREAT SALT LAKE AT SALTAIR BOAT HARBOR, UT&#13;
+GSL_south_arm_2017-04-23.txt Duplicate of above as run on 4/23/17&#13;
+GSL_south_arm_2016-03-01.txt Record downloaded 3/1/2016 that includes data prior to USGS changing format&#13;
+&#13;
+GSLLAV.txt is time series of level, computed area and volume from level using bathymetry&#13;
+&#13;
+Bathymetry folder.  Lake bathymetry used in these calculations.  This data is also stored separately in https://www.hydroshare.org/resource/b26090299ec947c692d4ee4651815579/    &#13;
+&#13;
+GSLLevelVol.csv is beginning of month time series of level and volume from 1/1/1915 used for modeling &#13;
+&#13;
+LevelVolWork.R is the R script used to process this data&#13;
+&#13;
+GSLLevelRecord.pptx  Powerpoint file with some figures of this data&#13;
+&#13;
+GSLFunctions.R  R functions used by the script&#13;
+&#13;
+Headings should be obvious.  Note that separate levels in the north arm only started being recorded in 1966 so for dates prior to that Nlevel_ft is reported as NA (no data in R).  Nlevel_m is converted from the measurement in ft, and filled in using the south arm when there is no north arm data (a few days after 1966 are also missing).  The bathymetry was then used to compute area and volume in each arm separately and add them up.</dcterms:abstract>
+      </rdf:Description>
+    </dc:description>
+    <dc:creator>
+      <rdf:Description rdf:about="http://www.hydroshare.org/user/2/">
+        <hsterms:name>David Tarboton</hsterms:name>
+        <hsterms:creatorOrder>1</hsterms:creatorOrder>
+        <hsterms:organization>Utah State University</hsterms:organization>
+        <hsterms:email>dtarb@usu.edu</hsterms:email>
+      </rdf:Description>
+    </dc:creator>
+    <dc:date>
+      <dcterms:created>
+        <rdf:value>2015-08-07T21:14:14.865292+00:00</rdf:value>
+      </dcterms:created>
+    </dc:date>
+    <dc:date>
+      <dcterms:modified>
+        <rdf:value>2017-04-23T17:47:12.262779+00:00</rdf:value>
+      </dcterms:modified>
+    </dc:date>
+    <dc:format>application/vnd.openxmlformats-officedocument.presentationml.presentation</dc:format>
+    <dc:format>text/plain</dc:format>
+    <dc:format>application/R</dc:format>
+    <dc:format>text/csv</dc:format>
+    <dc:format>application/vnd.openxmlformats-officedocument.wordprocessingml.document</dc:format>
+    <dc:format>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</dc:format>
+    <dc:identifier>
+      <rdf:Description>
+        <hsterms:hydroShareIdentifier>http://www.hydroshare.org/resource/b26090299ec947c692d4ee4651815579</hsterms:hydroShareIdentifier>
+      </rdf:Description>
+    </dc:identifier>
+    <dc:language>eng</dc:language>
+    <dc:relation>
+      <rdf:Description>
+        <hsterms:cites rdf:resource="https://www.hydroshare.org/resource/89125e9a3af544eab2479b7a974100ba/"/>
+      </rdf:Description>
+    </dc:relation>
+    <dc:rights>
+      <rdf:Description>
+        <hsterms:rightsStatement>This resource is shared under the Creative Commons Attribution CC BY.</hsterms:rightsStatement>
+        <hsterms:URL rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+      </rdf:Description>
+    </dc:rights>
+    <dc:subject>GSL</dc:subject>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hydroshare.org/terms/GenericResource">
+    <rdfs1:label>Generic</rdfs1:label>
+    <rdfs1:isDefinedBy>http://www.hydroshare.org/terms</rdfs1:isDefinedBy>
+  </rdf:Description>
+</rdf:RDF>
